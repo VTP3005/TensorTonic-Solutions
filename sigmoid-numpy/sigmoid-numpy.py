@@ -4,8 +4,6 @@ def sigmoid(x: list | float) -> np.ndarray | float:
     """
     Returns the sigmoid value for a scalar or each element of a list.
     """
-    if type(x)==float:
-        return 1/(1+np.exp(-x))
     x=np.array(x)
     x=1/(1+np.exp(-x))
     return x
